@@ -1,0 +1,34 @@
+Verify Linux Kernel
+uname -r
+
+Download
+wget https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.8.1.tar.gz
+
+Install missing packages
+sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev dwarves
+
+Using local config
+make localmodconfig
+
+Compile
+make -j4
+
+sudo make modules_install -j4
+sudo make install -j4
+sudo update-grub
+
+arch/x86/entry/syscalls/syscall_64.tbl
+440     64      helloworld              sys_helloworld
+
+include/linux/syscalls.h
+asmlinkage long sys_helloworld(void);
+
+Makefile
+core-y          += kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ block/ helloworld/
+
+
+Compile file
+arch/x86/boot/bzImage
+
+arch/x86/boot/install.sh
+/boot/
