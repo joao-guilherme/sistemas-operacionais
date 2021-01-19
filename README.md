@@ -7,10 +7,6 @@ Todos os trabalhos práticos da disciplina de Sistemas Operacionais do curso de 
 \
 \
 \
-\
-\
-\
-\
-\
 João Guilherme M. Guimarães
+
 Enjoy 🤫
