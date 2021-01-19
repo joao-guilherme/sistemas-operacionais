@@ -3,6 +3,7 @@
 ### Material Utilizado:
 
 Versão do Kernel: 5.8.1
+
 Sistema operacional: Ubuntu 20.10
 
 ### Explicação dos diretórios:
@@ -18,4 +19,5 @@ Sistema operacional: Ubuntu 20.10
 \
 \
 João Guilherme M. Guimarães
+
 Enjoy 🤫
